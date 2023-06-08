@@ -22,18 +22,18 @@ function gameLoop(playerInput) {
     const playerSelection = playerInput.toLowerCase();
     function playRound(playerSelection, computerSelection) {
       if (playerSelection == computerSelection) {
-        return "It was a draw";
+        alert("It was a draw");
       } else if (playerSelection == "rock" && computerSelection == "scissors") {
-        return "You win! (rock beats scissors)";
+        alert("You win! (rock beats scissors)");
       } else if (playerSelection == "paper" && computerSelection == "rock") {
-        return "You win! (paper beats rock)";
+        alert("You win! (paper beats rock)");
       } else if (
         playerSelection == "scissors" &&
         computerSelection == "paper"
       ) {
-        return "You win! (scissors beats paper)";
+        alert("You win! (scissors beats paper)");
       } else {
-        return (
+        alert(
           "You lose (" + computerSelection + " beats " + playerSelection + ")"
         );
       }
