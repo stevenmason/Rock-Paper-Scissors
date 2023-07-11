@@ -5,12 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>My Website</title>
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
   </head>
   <body>
-    <main>
-      <h1>Welcome to Rock Paper Scissors</h1>
-    </main>
-    <script src="app.js"></script>
+    <div class="top">
+      <h1 class="mainTitle">MOTORCYCLE ESCAPE (ROCK * PAPER * SCISSORS)</h1>
+      <div class="gameDescription">
+        Play five rounds and win overall to escape the police
+      </div>
+    </div>
+    <div class="container1">
+      <div class="subContainer1">
+        <div class="group">
+          <div class="btnDescript">Rock</div>
+          <button id="rock"></button>
+        </div>
+        <div class="group">
+          <div class="btnDescript">Paper</div>
+          <button id="paper"></button>
+        </div>
+        <div class="group">
+          <div class="btnDescript">Scissors</div>
+          <button id="scissors"></button>
+        </div>
+      </div>
+      <div class="action"></div>
+      <div class="score">
+          <div class="title">Score</div>
+      </div>
+      </div>
+    </div>
+    <div class="note">
+      *Note: [Rock > Scissors] -> [Scissors > Paper] -> [Paper > Rock]
+    </div>
   </body>
 </html>
