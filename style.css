@@ -10,7 +10,7 @@ body {
   flex-direction: column;
   flex-grow: 1;
   align-items: center;
-  padding-bottom: 100px;
+  padding-bottom: 50px;
 }
 .container1 {
   display: flex;
@@ -26,7 +26,7 @@ body {
 }
 .group {
   text-align: center;
-  padding: 20px;
+  padding: 10px;
 }
 .action {
   display: flex;
