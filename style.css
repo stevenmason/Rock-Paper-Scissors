@@ -101,6 +101,13 @@ button {
   border-radius: 15px;
   padding: 10px;
 }
+.message {
+  font-size: 50px;
+  font-weight: bold;
+  position: absolute;
+  top: 50px;
+  left: 150px;
+}
 
 #background {
   position: relative;

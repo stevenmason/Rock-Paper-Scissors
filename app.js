@@ -15,16 +15,8 @@ cSElement.style.padding = "20px";
 countComputer.appendChild(cSElement);
 
 function createMessage(message) {
-  const eventDescript = document.querySelector(".action");
-  const displayMessage = document.createElement("div");
-  displayMessage.setAttribute("id", "displayEvent");
-  displayMessage.textContent = message;
-  displayMessage.style.fontSize = "50px";
-  displayMessage.style.fontWeight = "bold";
-  displayMessage.style.position = "absolute";
-  displayMessage.style.top = "50px";
-  displayMessage.style.left = "150px";
-  eventDescript.appendChild(displayMessage);
+  const messageContainer = document.querySelector("#message");
+  messageContainer.textContent = message;
 }
 
 let playerScore = 0;
@@ -32,8 +24,6 @@ let computerScore = 0;
 
 function playRound(playerSelection, computerSelection) {
   if (playerSelection == computerSelection) {
-    let displayTimeout = document.getElementById("displayEvent");
-    displayTimeout.parentNode.removeChild(displayTimeout);
     createMessage("It was a draw");
     return;
   } else if (playerSelection == "rock" && computerSelection == "scissors") {
@@ -105,8 +95,6 @@ buttons.forEach((button) => {
       }
     }
     playRound(button.id, getComputerChoice(computerNumber));
-    let displayTimeout = document.getElementById("displayEvent");
-    displayTimeout.parentNode.removeChild(displayTimeout);
     gameEnd();
   });
 });
