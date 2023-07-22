@@ -30,7 +30,19 @@ function playRound(playerSelection, computerSelection) {
   } else {
     alert("You lose (" + computerSelection + " beats " + playerSelection + ")");
   }
-
-  console.log(playRound(playerSelection, computerSelection));
-  playerInput = prompt("Paper, Scissors or Rock");
 }
+//(playRound(playerSelection, computerSelection));
+const btnRock = document.querySelector("#rock");
+btnRock.addEventListener("click", () => {
+  alert("Hello World");
+});
+
+const btnPaper = document.querySelector("#paper");
+btnPaper.addEventListener("click", () => {
+  alert("Hello World");
+});
+
+const btnScissors = document.querySelector("#scissors");
+btnScissors.addEventListener("click", () => {
+  alert("Hello World");
+});
