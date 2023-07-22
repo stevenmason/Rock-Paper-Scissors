@@ -22,7 +22,7 @@ body {
   padding-bottom: 50px;
 }
 .mainTitle {
-  border: 5px solid black;
+  border: 5px outset black;
   border-radius: 15px;
   padding: 10px;
   background-color: white;
@@ -45,7 +45,6 @@ button {
   cursor: pointer;
   appearance: none;
   background-color: inherit;
-
 }
 .buttonPic {
   margin: 0;
@@ -113,7 +112,7 @@ button {
 }
 #motorbike {
   position: absolute;
-  left: 400px;
+  left: 500px;
   top: 380px;
   transform: scaleX(-1);
   height: auto;
